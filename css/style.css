@@ -196,6 +196,43 @@ ul { list-style: none; }
 .footnote { margin-top: var(--spacing-md); font-size: .85rem; color: var(--color-text-muted); }
 .footnote a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 4px; font-weight: 700; }
 
+/* === BENEFIT LIST === */
+.benefit-list { display: flex; flex-direction: column; gap: .75rem; margin-bottom: var(--spacing-md); }
+.benefit-list__item { display: flex; gap: .75rem; }
+.benefit-list__arrow { font-weight: 900; flex-shrink: 0; }
+
+/* === FEES TABLE === */
+.fees-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin-bottom: var(--spacing-md); }
+.fees-table th { text-align: left; padding: 8px 0; font-size: .75rem; letter-spacing: 1px; text-transform: uppercase; border-bottom: var(--border-bold); }
+.fees-table th:last-child { text-align: right; }
+.fees-table td { padding: 10px 0; border-bottom: 1px solid var(--color-border-subtle); }
+.fees-table td:last-child { text-align: right; font-weight: 700; }
+
+/* === BUTTON FULL WIDTH === */
+.btn--full { width: 100%; text-align: center; }
+
+/* === FORM NOTE === */
+.form__note { font-size: .8rem; color: var(--color-text-muted); margin-top: .5rem; }
+
+/* === ADDRESS BLOCK === */
+.address-block { margin-bottom: var(--spacing-md); }
+.address-block p { line-height: 1.8; }
+.address-block__name { font-weight: 700; }
+.address-block__link { font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+
+/* === CONTACT CARDS === */
+.contact-list { display: flex; flex-direction: column; gap: 0; margin-bottom: var(--spacing-md); }
+.contact-card { border-top: var(--border-bold); padding: .75rem 0; }
+.contact-card:not(:first-child) { border-top: 1px solid var(--color-border-subtle); }
+.contact-card__role { font-size: .7rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; opacity: .5; margin-bottom: 4px; }
+.contact-card__name { font-weight: 700; }
+.contact-card__detail { font-size: .85rem; color: var(--color-text-muted); margin-top: 2px; }
+
+/* === LEGAL BLOCK === */
+.legal-block { margin-top: var(--spacing-md); }
+.legal-block p { font-size: .85rem; color: var(--color-text-muted); line-height: 1.8; }
+.legal-block a { text-decoration: underline; text-underline-offset: 4px; }
+
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   .grid-2col { grid-template-columns: 1fr; }
