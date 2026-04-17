@@ -37,7 +37,6 @@ ul { list-style: none; }
 
 /* === NAVIGATION === */
 .nav {
-  position: sticky;
   position: relative;
   top: 0;
   z-index: 100;
@@ -114,7 +113,7 @@ ul { list-style: none; }
 .footer__name { font-weight: 700; margin-bottom: 4px; }
 .footer p, .footer a { font-size: 0.85rem; color: var(--color-text-muted); }
 .footer a:hover { color: var(--color-primary); }
-.footer__copy { font-size: 0.8rem; color: var(--color-text-muted); border-top: 1px solid #ddd; padding-top: var(--spacing-sm); }
+.footer__copy { font-size: 0.8rem; color: var(--color-text-muted); border-top: 1px solid var(--color-border-subtle); padding-top: var(--spacing-sm); }
 
 /* === PAGE HEADER (Innenseiten) === */
 .page-header { border-bottom: var(--border-bold); padding: var(--spacing-md) 0; }
@@ -178,7 +177,7 @@ ul { list-style: none; }
   .nav__toggle { display: block; }
   .nav__logo-text { display: none; }
   .pillars { grid-template-columns: 1fr; }
-  .pillar { border-right: none; border-bottom: 1px solid #ddd; }
+  .pillar { border-right: none; border-bottom: 1px solid var(--color-border-subtle); }
   .footer__grid { grid-template-columns: 1fr; }
   .cta-banner__inner { flex-direction: column; text-align: center; }
 }
