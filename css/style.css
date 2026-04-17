@@ -188,6 +188,10 @@ ul { list-style: none; }
 /* === FOOTER HEADING === */
 .footer__heading { font-weight: 700; margin-bottom: 8px; }
 
+/* === INFO BOX === */
+.info-box { margin-top: var(--spacing-md); padding: var(--spacing-sm); background: var(--color-bg-alt); border-left: 4px solid var(--color-primary); font-size: .9rem; }
+.info-box a { text-decoration: underline; text-underline-offset: 4px; font-weight: 700; }
+
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   .grid-2col { grid-template-columns: 1fr; }
