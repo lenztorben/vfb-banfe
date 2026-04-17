@@ -180,6 +180,11 @@ ul { list-style: none; }
 .instagram-placeholder__link-row { font-size: .8rem; margin-top: .5rem; }
 .instagram-placeholder__link-row a { color: var(--color-primary); text-decoration: underline; }
 
+/* === WIDGET PLATZHALTER === */
+.widget-placeholder { padding: 2rem; text-align: center; color: #999; border: 2px dashed var(--color-border-subtle); }
+.widget-placeholder p { font-size: .9rem; }
+.section-intro { margin-bottom: var(--spacing-md); color: var(--color-text-muted); max-width: 700px; }
+
 /* === FOOTER HEADING === */
 .footer__heading { font-weight: 700; margin-bottom: 8px; }
 
