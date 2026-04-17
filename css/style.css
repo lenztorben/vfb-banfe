@@ -13,6 +13,7 @@
   --color-text: #333333;
   --color-text-muted: #555555;
   --color-border: #000000;
+  --color-border-subtle: #dddddd;
   --font-family: 'Inter', Arial, Helvetica, sans-serif;
   --max-width: 1100px;
   --nav-height: 64px;
@@ -36,8 +37,12 @@ ul { list-style: none; }
 
 /* === NAVIGATION === */
 .nav {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--color-bg); border-bottom: var(--border-bold);
+  position: sticky;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  background: var(--color-bg);
+  border-bottom: var(--border-bold);
   height: var(--nav-height);
 }
 .nav__inner {
@@ -75,7 +80,7 @@ ul { list-style: none; }
 
 /* === 3 SÄULEN === */
 .pillars { display: grid; grid-template-columns: repeat(3, 1fr); border-top: var(--border-bold); border-bottom: var(--border-bold); }
-.pillar { padding: var(--spacing-md); border-right: 1px solid #ddd; }
+.pillar { padding: var(--spacing-md); border-right: 1px solid var(--color-border-subtle); }
 .pillar:last-child { border-right: none; }
 .pillar__label { font-size: 0.7rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem; }
 .pillar__title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
@@ -104,7 +109,7 @@ ul { list-style: none; }
 .cta-banner__sub { font-size: 0.9rem; opacity: 0.6; margin-top: 4px; }
 
 /* === FOOTER === */
-.footer { background: var(--color-bg-alt); border-top: 1px solid #ddd; padding: var(--spacing-md) 0; }
+.footer { background: var(--color-bg-alt); border-top: 1px solid var(--color-border-subtle); padding: var(--spacing-md) 0; }
 .footer__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-md); margin-bottom: var(--spacing-sm); }
 .footer__name { font-weight: 700; margin-bottom: 4px; }
 .footer p, .footer a { font-size: 0.85rem; color: var(--color-text-muted); }
@@ -124,7 +129,11 @@ ul { list-style: none; }
   font-family: var(--font-family); font-size: 0.95rem;
   border-radius: 0;
 }
-.form input:focus, .form select:focus, .form textarea:focus { outline: none; border-color: var(--color-primary); }
+.form input:focus, .form select:focus, .form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.15);
+}
 .form textarea { min-height: 140px; resize: vertical; }
 .form__success { display: none; padding: var(--spacing-sm); border: var(--border-bold); font-weight: 700; }
 
@@ -139,7 +148,7 @@ ul { list-style: none; }
 /* === TABELLE (Termine-Seite) === */
 .table-list { display: flex; flex-direction: column; }
 .table-list__month { font-size: 0.75rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; background: var(--color-primary); color: var(--color-bg); padding: 8px 16px; margin-top: var(--spacing-md); }
-.table-list__item { display: flex; gap: var(--spacing-sm); align-items: center; padding: 14px 0; border-bottom: 1px solid #eee; }
+.table-list__item { display: flex; gap: var(--spacing-sm); align-items: center; padding: 14px 0; border-bottom: 1px solid var(--color-border-subtle); }
 .table-list__date { min-width: 90px; font-size: 0.85rem; font-weight: 700; }
 .table-list__title { font-weight: 600; }
 .table-list__meta { font-size: 0.85rem; color: var(--color-text-muted); margin-top: 2px; }
