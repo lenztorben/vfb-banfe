@@ -5,7 +5,8 @@ Statische HTML-Website. Keine Build-Tools nötig.
 ## Pflege
 - Termine: `termine.html` und Vorschau in `index.html` anpassen
 - Texte/Vorstand: jeweilige HTML-Datei bearbeiten
-- Deploy: Änderungen committen, GitHub Desktop nutzen zum Pushen
+- Deploy: Dateien in GitHub Desktop als Commit markieren → "Push origin" klicken. (GitHub-Remote wird in Task 13 eingerichtet.)
+- Design: `css/style.css` nicht manuell anfassen – nur mit KI-Unterstützung bearbeiten.
 
 ## Template-Anpassung (neues Projekt)
 1. `css/style.css` → `--color-primary` und `--color-bg` ändern
