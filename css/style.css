@@ -177,6 +177,7 @@ ul { list-style: none; }
 
 /* === GRID UTILITY === */
 .grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: start; }
+.social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: start; }
 
 /* === PILLAR LINKS === */
 .pillar__more { margin-top: 1rem; }
@@ -244,6 +245,7 @@ ul { list-style: none; }
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   .grid-2col { grid-template-columns: 1fr; }
+  .social-grid { grid-template-columns: 1fr; }
   .nav__links { display: none; flex-direction: column; position: absolute; top: var(--nav-height); left: 0; right: 0; background: var(--color-bg); border-bottom: var(--border-bold); padding: var(--spacing-md); gap: var(--spacing-sm); }
   .nav__links.open { display: flex; }
   .nav__toggle { display: block; }
