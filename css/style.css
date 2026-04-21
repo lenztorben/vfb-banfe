@@ -166,8 +166,14 @@ ul { list-style: none; }
 /* === VORSTAND === */
 .vorstand-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--spacing-md); }
 .vorstand-card { border-top: var(--border-bold); padding-top: var(--spacing-sm); }
+.vorstand-card__photo { width: 80px; height: 80px; background: var(--color-bg-alt); border: var(--border-bold); margin-bottom: .75rem; overflow: hidden; }
+.vorstand-card__photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vorstand-card__photo--placeholder { display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 900; color: var(--color-border); letter-spacing: 1px; }
 .vorstand-card__role { font-size: 0.7rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; opacity: 0.5; margin-bottom: 4px; }
-.vorstand-card__name { font-size: 1.1rem; font-weight: 700; }
+.vorstand-card__name { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; }
+.vorstand-card__contact { margin-top: .5rem; display: flex; flex-direction: column; gap: 2px; }
+.vorstand-card__contact a { font-size: .8rem; color: var(--color-text-muted); text-decoration: underline; text-underline-offset: 3px; }
+.vorstand-card__contact span { font-size: .8rem; color: var(--color-text-muted); }
 
 /* === GRID UTILITY === */
 .grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: start; }
