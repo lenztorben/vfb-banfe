@@ -142,6 +142,7 @@ ul { list-style: none; }
 /* === WIDGET-CONTAINER (fussball.de) === */
 .widget-container { border: var(--border-bold); overflow: hidden; margin-bottom: var(--spacing-md); }
 .widget-container iframe { display: block; width: 100%; border: none; }
+.widget-container--scroll { max-height: 480px; overflow-y: auto; }
 
 /* === INSTAGRAM SECTION === */
 .instagram-section { text-align: center; }
